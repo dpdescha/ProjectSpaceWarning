@@ -43,7 +43,7 @@ public class Hitbox : MonoBehaviour {
 
     public void TestCollisions()
     {
-        if (!collided)
+        if (!collided && opponentColliders != null)
         {
             foreach (Collider opponentCollider in opponentColliders)
             {
